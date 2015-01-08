@@ -1,3 +1,6 @@
+
+import javax.servlet.http.HttpServlet;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,6 +11,6 @@
  *
  * @author hitema
  */
-public class main {
+public class main extends HttpServlet {
     
 }
