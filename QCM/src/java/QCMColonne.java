@@ -11,10 +11,37 @@ public class QCMColonne {
         lettre[1] = lettre2;
     }
     
+    /**
+     * Retoune la valeur correspondante à la réponse la plus utilisé
+     * @return 
+     */
+    public int getMostClickReponseValueInt() {
+        if(this.reponse[0] >= this.reponse[1])
+            return reponse[0];
+        else
+            return reponse[1];
+    }
     
+    /**
+     * Retoune le numero correspondant à la réponse la plus utilisé
+     * @return 
+     */
+    public int getMostClickReponseInt() {
+        if(this.reponse[0] >= this.reponse[1])
+            return 0;
+        else
+            return 1;
+    }
     
-    public int getResultatOnReponse(int index) {
-        return reponse[index];
+    /**
+     * Retoune la lettre correspondant à la réponse la plus utilisé
+     * @return 
+     */
+    public String getMostClickReponseString() {
+        if(this.reponse[0] >= this.reponse[1])
+            return this.lettre[0];
+        else
+            return this.lettre[1];
     }
 
     public void setValueReponse(int index, int value) {

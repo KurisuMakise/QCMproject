@@ -4,20 +4,23 @@
  */
 public class QCM {
     private QCMColonne[] themeQuestion = new QCMColonne[4];
-/*
+
     public QCM() {
-        for(int i=0;i<this.themeQuestion.length; i++)
-            this.themeQuestion[i] = new QCMColonne();
+            this.themeQuestion[0] = new QCMColonne("E","I");
+            this.themeQuestion[1] = new QCMColonne("S","N");
+            this.themeQuestion[2] = new QCMColonne("T","F");
+            this.themeQuestion[3] = new QCMColonne("J","P");
     }
     
-    public String getLetterAt(int index) {
-        themeQuestion[index].get
+    public String getFullLetter() {
+        return themeQuestion[0].getMostClickReponseString()+
+                themeQuestion[1].getMostClickReponseString()+
+                themeQuestion[2].getMostClickReponseString()+
+                themeQuestion[3].getMostClickReponseString();
     }
-    */
-}
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    public QCMColonne[] getThemeQuestion() {
+        return themeQuestion;
+    }
+    
+}
