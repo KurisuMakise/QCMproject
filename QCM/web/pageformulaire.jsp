@@ -5,8 +5,6 @@
     String Question;
     String ReponseA;
     String ReponseB;
-    String ReponseC;
-    String ReponseD; //--La réponse D--
 %>
 <!DOCTYPE html>
 <html>
@@ -15,6 +13,39 @@
         <title>Questionnaire</title>
     </head>
     <body>
-        
+        <center>Questionnaire</center>
+        <form name="frmImpots" action="/QCM/main" method="POST">
+                <table>
+                    <tr>Question n° <!--requete pour avoir le numero de la question--></tr>
+                    <tr>
+                        <td><!--requete pour avoir la question corresponante--></td>
+                        <td>
+                            <input type="radio" name="reponse" value="A"/>
+                            <input type="radio" name="reponse" value="B"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="OK"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>        
     </body>
 </html>
+
+
+
+<!-- Tronche que ca doit avoir
+
+                Questionnaire
+                
+    Question n°X
+    
+    Question................................ ?
+    O   Reponse A
+    O   Reponse B
+    
+    <> OK    
+
+-->
