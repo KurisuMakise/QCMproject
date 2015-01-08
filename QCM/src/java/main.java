@@ -36,7 +36,8 @@ public class main extends HttpServlet {
         int reponsenumQuestion=Integer.parseInt(request.getParameter("reponsenumQuestion")); 
         int numColonne = reponsenumQuestion%4;
         reponsenumQuestion++;
-        
+        int numQuestion=Integer.parseInt(request.getParameter("numQuestion")); 
+        numQuestion++;
     }
     
     

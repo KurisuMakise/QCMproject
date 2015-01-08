@@ -10,15 +10,31 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 
 <servlet>
 
-<servlet-name>compteur</servlet-name>
+<servlet-name>main</servlet-name>
 
-<servlet-class>compteur</servlet-class>
+<servlet-class>main</servlet-class>
 
 <init-param>
 
-<param-name>urlAffichageCompteur</param-name>
+<param-name>urlPagededepart</param-name>
 
-<param-value>/compteur.jsp</param-value>
+<param-value>/pagededepart.jsp</param-value>
+
+</init-param>
+
+<init-param>
+
+<param-name>urlPageformulaire</param-name>
+
+<param-value>/pageformulaire.jsp</param-value>
+
+</init-param>
+
+<init-param>
+
+<param-name>urlPageresultat</param-name>
+
+<param-value>/pageresultat.jsp</param-value>
 
 </init-param>
 
@@ -26,7 +42,7 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 
 <param-name>urlErreur</param-name>
 
-<param-value>/erreurcompteur.jsp</param-value>
+<param-value>/erreur.jsp</param-value>
 
 </init-param>
 
@@ -34,11 +50,14 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 
 <servlet-mapping>
 
-<servlet-name>compteur</servlet-name> <url-pattern>/compteur</url-pattern>
+<servlet-name>main</servlet-name> 
+
+<url-pattern>/main</url-pattern>
 
 </servlet-mapping>
+
 <welcome-file-list>
-    <welcome-file>compteur</welcome-file> 
+    <welcome-file>main</welcome-file> 
 </welcome-file-list>
 
 </web-app> 
