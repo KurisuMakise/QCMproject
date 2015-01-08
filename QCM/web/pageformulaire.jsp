@@ -22,7 +22,7 @@
         <center>Questionnaire</center>
         <form name="frmImpots" action="/QCM/main" method="POST">
                 <table>
-                    <tr>Question n° <!--    numQuestion     requete pour avoir le numero de la question--></tr>
+                    <tr>Question n° <!--     numQuestion     requete pour avoir le numero de la question--></tr>
                     <tr>
                         <td><!--    question        requete pour avoir la question corresponante--></td>
                         <td>
