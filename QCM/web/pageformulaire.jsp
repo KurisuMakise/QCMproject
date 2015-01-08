@@ -5,39 +5,28 @@
     String question;
     String reponseA;
     String reponseB;
-    int reponse;
 %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Questionnaire</title>
-        <script language="JavaScript" type="text/javascript">
-            function validerReponse()
-            {
-                reponse = valueof(reponseButtonRadio);
-                if(numQuestion >= 20)
-                {
-                    load("pageresultat.jsp");
-                }
-            }
-        </script>
     </head>
     <body>
         <center>Questionnaire</center>
-        <form name="frmImpots" action="/QCM/main" method="POST">
+        <form name="frmImpots" action="/QCM/QCM" method="POST">
                 <table>
-                    <tr>Question n° <%= numQuestion %><!--requete pour avoir le numero de la question--></tr>
+                    <tr>Question n° <!--    numQuestion    requete pour avoir le numero de la question--></tr>
                     <tr>
-                        <td> <%= question %><!--requete pour avoir la question corresponante--></td>
+                        <td> <!--   question        requete pour avoir la question corresponante--></td>
                         <td>
-                            <input type="radio" name="reponseButtonRadio" value="0"/> <p> <%= reponseA %><!--requete pour avoir la reponseA correspondante-->
-                            <input type="radio" name="reponseButtonRadio" value="1"/> <p> <%= reponseB %><!--requete pour avoir la reponseB correspondante-->
+                            <input type="radio" name="reponseButtonRadio" value="0"/> <p> <!--      reponseA    requete pour avoir la reponseA correspondante--></p>
+                            <input type="radio" name="reponseButtonRadio" value="1"/> <p> <!--      reponseB    requete pour avoir la reponseB correspondante--></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="button" value="OK" onclick="validerReponse()"/>
+                            <input type="submit" value="suivant"/>
                         </td>
                     </tr>
                 </table>
