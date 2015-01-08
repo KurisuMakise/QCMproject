@@ -1,6 +1,11 @@
 <%@ page import="java.util.*" %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+    int numQuestion=0;
+    
+    %>
 <!DOCTYPE html>
 <html>
     <head>

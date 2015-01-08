@@ -44,7 +44,7 @@ public class QCMColonne {
             return this.lettre[1];
     }
 
-    public void setValueReponse(int index, int value) {
-        this.reponse[index] = value;
+    public void setValueReponse(int index) {
+        this.reponse[index]++;
     }
 }
