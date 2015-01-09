@@ -38,13 +38,13 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 
 </init-param>
 
-<init-param>
+<!--<init-param>
 
 <param-name>urlErreur</param-name>
 
 <param-value>/erreur.jsp</param-value>
 
-</init-param>
+</init-param>-->
 
 </servlet> ...
 

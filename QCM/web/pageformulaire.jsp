@@ -9,12 +9,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        
         <title>Questionnaire</title>
     </head>
     <body>
         <center>Questionnaire</center>
-        <form name="frmImpots" action="/QCM/QCM" method="POST">
+        <form name="frmQCM" action="/QCM/QCM" method="POST">
                 <table>
                     <tr>Question n° <%= numQuestion %> <!--requete pour avoir le numero de la question--></tr>
                     <tr>
