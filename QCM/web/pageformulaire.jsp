@@ -2,9 +2,9 @@
 <%
 // variables qui contiendront le numéro de la question en cours, les questions et possibilitées de réponses du questionnaire
     int numQuestion= (int)request.getAttribute("numQuestion");
-    String question;
-    String reponseA;
-    String reponseB;
+    String question= (String)request.getAttribute("question");
+    String reponseA= (String)request.getAttribute("reponseA");
+    String reponseB= (String)request.getAttribute("reponseB");
 %>
 <!DOCTYPE html>
 <html>
@@ -16,12 +16,12 @@
         <center>Questionnaire</center>
         <form name="frmImpots" action="/QCM/QCM" method="POST">
                 <table>
-                    <tr>Question n° <%= numQuestion %> <!--    numQuestion    requete pour avoir le numero de la question--></tr>
+                    <tr>Question n° <%= numQuestion %> <!--requete pour avoir le numero de la question--></tr>
                     <tr>
-                        <td> <!--   question        requete pour avoir la question corresponante--></td>
+                        <td> <%= question %><!--requete pour avoir la question corresponante--></td>
                         <td>
-                            <input type="radio" name="reponseButtonRadio" value="0"/> <p> <!--      reponseA    requete pour avoir la reponseA correspondante--></p>
-                            <input type="radio" name="reponseButtonRadio" value="1"/> <p> <!--      reponseB    requete pour avoir la reponseB correspondante--></p>
+                            <input type="radio" name="reponseButtonRadio" value="0"/> <p> <%= reponseA %><!--requete pour avoir la reponseA correspondante--></p>
+                            <input type="radio" name="reponseButtonRadio" value="1"/> <p> <%= reponseB %><!--requete pour avoir la reponseB correspondante--></p>
                         </td>
                     </tr>
                     <tr>
@@ -36,16 +36,16 @@
 
 
 
-<!-- Tronche que ca doit avoir
+<!-- aperçu de la mise en page voulue
 
                 Questionnaire
                 
     Question n°X
     
-    Question................................ ?
+    Question ................................ ?
     O   Reponse A
     O   Reponse B
     
-    <> OK    
+    <_> Suivant
 
 -->
