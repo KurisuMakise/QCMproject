@@ -33,7 +33,7 @@ public class main extends HttpServlet {
         
         int rep=-1;
         int reponseButtonRadio=Integer.parseInt(request.getParameter("reponseButtonRadio")); 
-        int reponsenumQuestion=Integer.parseInt(request.getParameter("reponsenumQuestion")); 
+        int reponsenumQuestion=Integer.parseInt(request.getParameter("numQuestion")); 
         int numColonne = reponsenumQuestion%4;
         reponsenumQuestion++;
         int numQuestion=Integer.parseInt(request.getParameter("numQuestion")); 

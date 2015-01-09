@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class MyConnexion {
     
     
-    private String url ="jdbc:mysql://localhost/db_mbti";
+    private String url ="jdbc:mysql://localhost/qcm_bdd";
     private String user = "root";
     private String pass = "";
     
